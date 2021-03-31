@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Avon Trophies</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="images/logo.png" class="navLogo" />
+      </div>
+      <div class="head-right">
+        <div class="head-info">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-github"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-google-plus"></a>
+
+          <nav class="contact">
+            <ul type="none">
+              <li>
+                <a class="fa con" href="tel: +919758183355"
+                  ><span class="fa-phone"></span>&nbsp;&nbsp;&nbsp;
+                  +919758183355</a
+                >
+              </li>
+              <li>
+                <a
+                  class="fa con"
+                  href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwQnnCcMWnVmdWLLtdwdrTklQBgzjFxSwPnHCMlwbChvPLpzPfQNkHnTvcXJVxWKSzHPkMP"
+                  >&nbsp;&nbsp;&nbsp; manan.gupta.mrt2000@gmail.com</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="head-nav">
+          <div id="navBut">
+            <span onclick="openNav()">&#9776;</span>
+          </div>
+          <div class="headNav-div">
+            <ul type="none" class="headNav-item">
+              <li>Home</li>
+              <li>Pages</li>
+              <li>Portfolio</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <img src="images/logo.png" class="navLogo" />
+            <a href="#">&#8594; About</a>
+            <a href="#">&#8594; Services</a>
+            <a href="#">&#8594; Clients</a>
+            <a href="#">&#8594; Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main">
+      <div id="home">
+        <div class="slides">
+          <!--SlideShow here-->
+          <style>
+            .mySlides {
+              display: none;
+            }
+
+            /* Slideshow container */
+            .slideshow-container {
+              width: 100%;
+              position: relative;
+              margin: auto;
+              border: 0.1% black solid;
+              border-bottom: none;
+              z-index: -2;
+            }
+
+            /* Caption text */
+            .text {
+              color: peachpuff;
+              font-size: 10vw;
+              font-style: italic;
+              position: absolute;
+              top: 40%;
+              width: 100%;
+              text-align: center;
+            }
+
+            /* Fading animation */
+            .fade {
+              -webkit-animation-name: fade;
+              -webkit-animation-duration: 1.5s;
+              animation-name: fade;
+              animation-duration: 1.5s;
+            }
+
+            @-webkit-keyframes fade {
+              from {
+                opacity: 0.4;
+              }
+              to {
+                opacity: 1;
+              }
+            }
+
+            @keyframes fade {
+              from {
+                opacity: 0.4;
+              }
+              to {
+                opacity: 1;
+              }
+            }
+
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+              .text {
+                font-size: 11px;
+              }
+            }
+          </style>
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="images/slide1.jpg" style="width: 100%" />
+              <div class="text" style="top: 30%; left: 20%">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+              <img src="images/slide2.jpg" style="width: 100%" />
+              <div class="text" style="top: 10%; left: -20%">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+              <img src="images/slide3.jpg" style="width: 100%" />
+              <div class="text" style="top: 60%; left: -20%">Caption Three</div>
+            </div>
+          </div>
+          <br />
+        </div>
+      </div>
+    </div>
+    <script src="javascript/script.js"></script>
+  </body>
+</html>

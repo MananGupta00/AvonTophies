@@ -1,0 +1,180 @@
+$color1: #d1d7e0;
+$color2: #564f6f;
+$color3: #802bb1;
+$color4: #2d283e;
+$color5: #4c495d;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 120px;
+  background-color: $color1;
+  box-shadow: 5px 0px 10px 0px #888888;
+  display: flex;
+  flex-direction: row;
+}
+.logo {
+  width: 19.5%;
+  height: 100%;
+  background-color: $color4;
+  z-index: 2;
+}
+.logo img {
+  padding: 10px;
+  max-width: 80%;
+}
+.head-right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.head-info {
+  height: 40%;
+  background-image: linear-gradient(to top left, #621abb, $color3);
+  box-shadow: 0px 0px 20px 0px #888888;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.head-nav {
+  height: 60%;
+}
+
+ul {
+  display: inline-flex;
+}
+.contact {
+  padding-right: 5%;
+  float: right;
+  // display: flex;
+  // flex-direction: row;
+  //max-width: 50%;
+  @media screen and (max-width: 900px) {
+    font-size: 50%;
+  }
+}
+.contact a {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-left: 10px;
+  font-size: auto;
+  padding-left: 40px;
+  color: white;
+  width: auto;
+  border-right: none;
+  border-left: 2px dotted $color1;
+}
+
+// social media
+.fa {
+  width: 4%;
+  height: 80%;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 15px;
+  border-right: 1px dotted $color1;
+  border-radius: 40%;
+  transition: 0.6s;
+  background: none;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.con {
+  height: 60%;
+  margin-top: -2px;
+  padding-top: 15px !important;
+}
+
+.fa:hover {
+  color: $color4;
+}
+.fa-phone {
+  border: none;
+}
+
+// head nav code
+.headNav-item li {
+  cursor: pointer;
+  margin-right: 10%;
+  margin-left: 10%;
+  text-align: center;
+  padding-top: 15px;
+}
+.headNav-item {
+  transition: 0.5s;
+  font-size: 1.5vw;
+}
+.headNav-div {
+  display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+#navBut {
+  background-color: $color4;
+  float: right;
+  width: 15%;
+  height: 72px;
+  font-size: 50px;
+  color: $color3;
+  cursor: pointer;
+  text-align: center;
+  z-index: 2;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+#navBut:hover {
+  color: $color1;
+}
+.navLogo {
+  padding: 2%;
+  margin: 2%;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  margin-top: 5%;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 500px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+///////////////////////////////
