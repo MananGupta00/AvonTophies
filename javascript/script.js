@@ -1,13 +1,27 @@
+var slideIndex = 0;
+
+window.onload = function () {
+  showSlides();
+  scrollHead();
+};
+
+function scrollHead() {
+  var winWidth = window.innerWidth;
+
+  if (winWidth < 500) {
+    document.getElementById("head-info").scrollTop =
+      winWidth / 7 - winWidth / 10;
+    console.log("scrolling");
+  }
+}
+
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("mySidenav").style.width = "21vw";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
-
-var slideIndex = 0;
-showSlides();
 
 function showSlides() {
   var i;

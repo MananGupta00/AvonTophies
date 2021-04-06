@@ -15,10 +15,10 @@
   <body>
     <div class="header">
       <div class="logo">
-        <img src="images/logo.png" class="navLogo" />
+        <img class="navLogo" />
       </div>
       <div class="head-right">
-        <div class="head-info">
+        <div class="head-info" id="head-info">
           <a href="#" class="fa fa-facebook"></a>
           <a href="#" class="fa fa-github"></a>
           <a href="#" class="fa fa-instagram"></a>
@@ -58,7 +58,7 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
               >&times;</a
             >
-            <img src="images/logo.png" class="navLogo" />
+            <img class="navLogo" />
             <a href="#">&#8594; About</a>
             <a href="#">&#8594; Services</a>
             <a href="#">&#8594; Clients</a>
@@ -74,11 +74,13 @@
           <style>
             .mySlides {
               display: none;
+              width: 100vw;
             }
 
             /* Slideshow container */
             .slideshow-container {
               width: 100%;
+              overflow: hidden;
               position: relative;
               margin: auto;
               border: 0.1% black solid;
