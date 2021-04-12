@@ -45,12 +45,10 @@ function showMain() {
 }
 function showContact() {
   pageCode = 4;
-  var height = (window.innerWidth * 5) / 10;
+ // var height = (window.innerWidth * 5) / 10;
   main.innerText = "";
   main.innerHTML =
-    '<embed type="text/html" src="snippets/contact.html" style=" width:100vw; height: ' +
-    height +
-    'px;">';
+    '<embed type="text/html" src="snippets/contact.html" style=" width:100vw; height: 700px;">';
 }
 
 //topmost scroll
