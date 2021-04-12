@@ -1,7 +1,9 @@
 window.onload = function () {
   scrollHead();
-  showMain();
+  showContact();
 };
+
+//-------scrolling with cursor-----------
 var over = document.getElementById("overlay");
 var foc = false;
 function focusOverlay() {
@@ -17,6 +19,7 @@ function mouseLeft() {
   foc = false;
 }
 
+//scrolling up
 var over2 = document.getElementById("overlay2");
 var foc2 = false;
 function focusOverlay2() {
@@ -32,7 +35,7 @@ function mouseLeft2() {
   foc2 = false;
 }
 
-//switching functions
+//content switching functions
 const main = document.getElementById("main");
 var pageCode = 0;
 function showMain() {
@@ -45,10 +48,10 @@ function showMain() {
 }
 function showContact() {
   pageCode = 4;
- // var height = (window.innerWidth * 5) / 10;
+  //var height = (window.innerWidth * 5) / 10;
   main.innerText = "";
   main.innerHTML =
-    '<embed type="text/html" src="snippets/contact.html" style=" width:100vw; height: 700px;">';
+    '<embed id= "contEm" type="text/html" src="snippets/contact.html" style=" width:100vw; height: 700px;">';
 }
 
 //topmost scroll
