@@ -7,12 +7,33 @@ $color5: #4c495d;
   margin: 0;
   padding: 0;
 }
-::-webkit-scrollbar {
-  display: none;
+body {
+  margin: 0 !important;
+}
+// ::-webkit-scrollbar {
+//   width: 10px;
+// }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .header {
   height: 10vw;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
   background-color: $color1;
   box-shadow: 5px 0px 10px 0px #888888;
   display: flex;
@@ -178,3 +199,8 @@ ul {
 }
 
 ///////////////////////////////
+
+#main {
+  margin: 0;
+  left: 0;
+}

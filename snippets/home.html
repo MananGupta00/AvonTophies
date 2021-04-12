@@ -1,0 +1,138 @@
+<div id="home">
+        <div class="slides">
+          <!--SlideShow here-->
+          <style>
+
+	body{
+	width: 99vw;
+	margin: 0;
+	left:0;}
+
+            .mySlides {
+              display: none;
+              width: 100vw;
+            }
+	
+            /* Slideshow container */
+            .slideshow-container {
+              width: 100vw;
+              overflow: hidden;
+              position: relative;
+              margin: auto;
+              border: 0.1% black solid;
+              border-bottom: none;
+              z-index: -2;
+            }
+
+            /* Caption text */
+            .text {
+              color: peachpuff;
+              font-size: 10vw;
+              font-style: italic;
+              position: absolute;
+              top: 40%;
+              width: 100%;
+              text-align: center;
+              z-index: 1;
+            }
+
+            /* Fading animation */
+            .fade {
+              -webkit-animation-name: fade;
+              -webkit-animation-duration: 1.5s;
+              animation-name: fade;
+              animation-duration: 1.5s;
+            }
+
+            @-webkit-keyframes fade {
+              from {
+                opacity: 0.4;
+              }
+              to {
+                opacity: 1;
+              }
+            }
+
+            @keyframes fade {
+              from {
+                opacity: 0.4;
+              }
+              to {
+                opacity: 1;
+              }
+            }
+
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+              .text {
+                font-size: 11px;
+              }
+            }
+            /* Lines animation*/
+            line {
+              fill-opacity: 0;
+              stroke: white;
+              stroke-width: 3px;
+              stroke-dashoffset: 0;
+              stroke-dasharray: 2000;
+              animation: animLine 8s ease-in infinite;
+            }
+            @keyframes animLine {
+              0% {
+                stroke-dashoffset: 2000;
+              }
+              50% {
+                stroke-dashoffset: 0;
+              }
+              99% {
+                stroke-dashoffset: 2000;
+              }
+            }
+          </style>
+          <div class="slideshow-container">
+            <div id="cross">
+              <svg height="100%" width="100vw" style="position: absolute">
+                <line x1="0" y1="0" x2="56vw" y2="20vw" />
+                <line x1="42vw" y1="40vw" x2="200vw" y2="90vw" />
+                <line x1="0" y1="100vw" x2="70vw" y2="0" />
+              </svg>
+            </div>
+            <div class="mySlides fade">
+              <img src="../images/slide1.jpg" style="width: 100%" />
+              <div class="text" style="top: 30%; left: 20%">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+              <img src="../images/slide2.jpg" style="width: 100%" />
+              <div class="text" style="top: 10%; left: -20%">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+              <img src="../images/slide3.jpg" style="width: 100%" />
+              <div class="text" style="top: 60%; left: -20%">Caption Three</div>
+            </div>
+          </div>
+          <script>
+            var slideIndex = 0;
+            function showSlides() {
+              if (slideIndex == -1) return;
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {
+                slideIndex = 1;
+              }
+              slides[slideIndex - 1].style.display = "block";
+              setTimeout(showSlides, 6000); // Change image every 6 seconds
+            }
+            function endSlideShow() {
+              slideIndex = -1;
+            }
+            showSlides();
+          </script>
+          <br />
+        </div>
+      </div>

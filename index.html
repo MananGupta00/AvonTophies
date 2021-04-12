@@ -48,10 +48,10 @@
           </div>
           <div class="headNav-div">
             <ul type="none" class="headNav-item">
-              <li>Home</li>
+              <li onclick="showMain()">Home</li>
               <li>Pages</li>
               <li>Portfolio</li>
-              <li>Contact Us</li>
+              <li onclick="showContact()">Contact Us</li>
             </ul>
           </div>
           <div id="mySidenav" class="sidenav">
@@ -67,91 +67,7 @@
         </div>
       </div>
     </div>
-    <div id="main">
-      <div id="home">
-        <div class="slides">
-          <!--SlideShow here-->
-          <style>
-            .mySlides {
-              display: none;
-              width: 100vw;
-            }
-
-            /* Slideshow container */
-            .slideshow-container {
-              width: 100%;
-              overflow: hidden;
-              position: relative;
-              margin: auto;
-              border: 0.1% black solid;
-              border-bottom: none;
-              z-index: -2;
-            }
-
-            /* Caption text */
-            .text {
-              color: peachpuff;
-              font-size: 10vw;
-              font-style: italic;
-              position: absolute;
-              top: 40%;
-              width: 100%;
-              text-align: center;
-            }
-
-            /* Fading animation */
-            .fade {
-              -webkit-animation-name: fade;
-              -webkit-animation-duration: 1.5s;
-              animation-name: fade;
-              animation-duration: 1.5s;
-            }
-
-            @-webkit-keyframes fade {
-              from {
-                opacity: 0.4;
-              }
-              to {
-                opacity: 1;
-              }
-            }
-
-            @keyframes fade {
-              from {
-                opacity: 0.4;
-              }
-              to {
-                opacity: 1;
-              }
-            }
-
-            /* On smaller screens, decrease text size */
-            @media only screen and (max-width: 300px) {
-              .text {
-                font-size: 11px;
-              }
-            }
-          </style>
-          <div class="slideshow-container">
-            <div class="mySlides fade">
-              <img src="images/slide1.jpg" style="width: 100%" />
-              <div class="text" style="top: 30%; left: 20%">Caption Text</div>
-            </div>
-
-            <div class="mySlides fade">
-              <img src="images/slide2.jpg" style="width: 100%" />
-              <div class="text" style="top: 10%; left: -20%">Caption Two</div>
-            </div>
-
-            <div class="mySlides fade">
-              <img src="images/slide3.jpg" style="width: 100%" />
-              <div class="text" style="top: 60%; left: -20%">Caption Three</div>
-            </div>
-          </div>
-          <br />
-        </div>
-      </div>
-    </div>
+    <div id="main"></div>
     <script src="javascript/script.js"></script>
   </body>
 </html>

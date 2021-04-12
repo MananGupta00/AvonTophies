@@ -1,10 +1,29 @@
-var slideIndex = 0;
-
 window.onload = function () {
-  showSlides();
   scrollHead();
+  showMain();
 };
 
+const main = document.getElementById("main");
+var pageCode = 0;
+
+function showMain() {
+  var height = window.innerWidth;
+  main.innerText = "";
+  main.innerHTML =
+    '<embed type="text/html" src="snippets/home.html" style=" width:100vw; height: ' +
+    height +
+    'px;">';
+}
+function showContact() {
+  //if (pageCode == 0) endSlideShow();
+  pageCode = 4;
+  var height = (window.innerWidth * 5) / 10;
+  main.innerText = "";
+  main.innerHTML =
+    '<embed type="text/html" src="snippets/contact.html" style=" width:100vw; height: ' +
+    height +
+    'px;">';
+}
 function scrollHead() {
   var winWidth = window.innerWidth;
 
@@ -21,18 +40,4 @@ function openNav() {
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
-}
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 6000); // Change image every 6 seconds
 }
