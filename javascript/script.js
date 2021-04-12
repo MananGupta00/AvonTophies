@@ -1,6 +1,6 @@
 window.onload = function () {
   scrollHead();
-  showContact();
+  showMain();
 };
 
 //-------scrolling with cursor-----------
