@@ -1,0 +1,57 @@
+<html>
+
+</html><head>
+    <style>
+  .portCnt {
+    width: 90vw;
+    height: 90%;
+    border: 2px dotted #808080;
+    display: flex;    
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('../images/portfolio-background.jpg');
+    background-size: 30%;
+    perspective: 1000px; 
+  }
+  .smallPort {
+    min-width: 30vw;
+    min-height: 22.5vw;
+    width: fit-content;
+    height:fit-content;
+    background-image: url('../images/woodenframe.gif');
+    background-size:  cover;
+    position:absolute, relative;
+    transition: transform 0.8s;
+  transform-style: preserve-3d;
+  }
+  .portGlass{
+    font-size: 2vw;
+    color: white;
+    text-align: center;
+    width: 83%;
+    margin: 9%;
+    height:82%;
+    background-color: rgba(32, 32, 32, 0.5);
+    
+    z-index:1;
+  }
+  .PortText{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding:10%;
+  }
+</style>
+</head>
+<body>
+<div class="portCnt">
+  <div class="smallPort">
+    <div class="PortGlass">
+      <div class="PortText"><h3>Manan Gupta</h3>
+        <h5>Chief Executive Officer</h5>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

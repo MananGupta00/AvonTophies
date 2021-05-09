@@ -75,13 +75,25 @@
               stroke-width: 3px;
               stroke-dashoffset: 0;
               stroke-dasharray: 2000;
-              animation: animLine 8s ease-in infinite;
+              animation: animLine 12s ease-in-out infinite;
             }
             @keyframes animLine {
               0% {
                 stroke-dashoffset: 2000;
               }
-              50% {
+              16% {
+                stroke-dashoffset: 0;
+              }
+	32% {
+                stroke-dashoffset: 2000;
+              }
+              48% {
+                stroke-dashoffset: 0;
+              }
+	64% {
+                stroke-dashoffset: 2000;
+              }
+              80% {
                 stroke-dashoffset: 0;
               }
               99% {
